@@ -4,12 +4,13 @@
 
 /**
  * main - print the last digit of a number stored in n
+ *
  * Return: Always 0
  */
 int main(void)
 {
 	int n;
-	int m,
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -19,7 +20,7 @@ int main(void)
 		printf("Last digit of %d is %d and is grater than 5", n, m);
 	else if (m == 0)
 		printf("Last digit of %d is %d and is 0", n, m);
-	else (m < 6 && m != 0)
+	else
 		printf("Last digit of %d id %d and is less than 6 and not 0", n, m);
 	printf("\n");
 	return (0);
